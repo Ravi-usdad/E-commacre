@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>blog</title>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+
+	<link rel="stylesheet" href="css/style.css">
+
+    <style>
+    /* contact */
+
+        .contact{
+            margin-top: 3rem;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .contact form{
+            flex:1 1 40rem;
+            padding: 2rem;
+            margin: 1rem;
+            margin-top: 4rem;
+            border-style: dashed;
+            box-shadow: 0 0 .5rem rgba(0,0,0,.3);
+        }
+
+        .contact .content{
+            flex:1 1 40rem;
+            padding: 3rem 1rem;
+        }
+
+        .contact form .box{
+            width: 100%;
+            color: #333;
+            height: 3rem;
+            font-size: 1rem;
+            text-transform: none;
+            margin: 0.5rem 0;
+        }
+
+        .contact form .box::placeholder{
+            text-transform: capitalize;
+        }
+
+        .contact form .box:focus{
+            border-color: var(--orange);
+        }
+
+        .contact form .message{
+            height: 15rem;
+            resize: none;
+        }
+
+        .contact .content h3{
+            font-size: 4rem;
+            color: #444;
+        }
+
+        .contact .content p{
+            font-size: 1.8rem;
+            color: #666;
+            padding: 1rem 0;
+        }
+
+        .content .cart-info img{
+            width: 100px;
+            height: 100px;
+            margin-right: 10px;
+        }
+        
+        .contact h3{
+            font-size: 1rem;
+            text-align: center;
+        }
+        .content .cart-info button{
+            margin: 1rem;
+            font-size: 0.6rem;
+        }
+        .content .cart-info p{
+            font-size: 0.9rem;
+        }  
+        .total-price{
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .total-price table{
+            border-top: 3px solid #ff523d;
+            width: 100%;
+            max-width: 650px;
+        }
+        
+        .contact button{
+            width: 100%;
+
+        }
+
+    </style>
+
+</head>
+<body>
+	<!--navigation-->
+	<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top py-3 ">
+	  <div class="container">
+		    <img src="img/logo1.png">
+		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		      <span><i id="bar" class="fas fa-bars"></i></span>
+		    </button>
+		    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		    <ul class="navbar-nav ml-auto">
+		        <li class="nav-item">
+		          <a class="nav-link" href="index.html">Home</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="shop.html">Shop</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="blog.html">Blog</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="#">About</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="#">Contact Us</a>
+		        </li>
+		        <li class="nav-item">
+                    <a href="#"></a><i class="fal fa-search" id="search-icon"></i></a>
+					<a href="cart.html"><i class="fal fa-shopping-bag"></i></a>        
+		      	</li>
+		    </div>
+	  </div>
+	</nav>
+
+    <section class="contact col-md-12 col-12">
+
+        <form action="">
+        
+            <input type="text" class="box" placeholder="name">
+            <input type="text" class="box" placeholder="number">
+            <input type="text" class="box" placeholder="your email">
+            <input type="text" class="box" placeholder="address">
+            <input type="city" class="box" placeholder="state">
+            <input type="text" class="box" placeholder="city">
+            <input type="text" class="box" placeholder="pincode">
+            <br>    
+        
+        
+            <button class="buy-btn mt-1">send message</button>
+        </form>
+        <div class="content">
+
+            <h3>Product</h3>
+            
+        <table>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="img/shop/3.jpg" alt="">
+                        <div>
+                            <p>Printed Tshirst <br> Price: $50.00</p>
+                            <small></small>
+                        </div>
+                    </div>
+                </td>
+                <td><i class="fas fa-trash"></i></td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="img/shop/5.jpg" alt="">
+                        <div>
+                            <p>Printed Tshirst <br> Price: $75.00</p>
+                        </div>
+                    </div>
+                </td>
+                <td><i class="fas fa-trash"></i></td>
+            </tr>
+        </table>
+            <p class="text-center">payment</p>
+              <input type="radio" id="html" name="fav_language" value="HTML">
+              <label for="html">Net Banking</label><br>
+              <input type="radio" id="css" name="fav_language" value="CSS">
+              <label for="css">Cash on Delivery</label><br> 
+          
+
+            <div class="total-price">
+                <table>
+                    <tr>
+                        <td>Subtotal</td>
+                        <td>$200.00</td>
+                    </tr>
+                    <tr>
+                        <td>Product Name</td>
+                        <td>$50.00</td>
+                    </tr>
+                    <tr>
+                        <td>total</td>
+                        <td>$200.00</td>
+                    </tr>
+                </table>
+            </div>
+
+            <button class="byu-btn">Payment</button>
+          
+
+
+    </section>    
+
+
+
+    <footer class="mt-5 py-5">
+		<div class="row container mx-auto pt-5">
+			<div class="footer-one col-lg-3 col-md-6 col-12">
+				<img src="img/logo2.png" alt="">
+				<p class="pt-3">Fringilla urna porttitor rhoncus dolor purus luctus venenatis lectus magna
+					Fringilla diam maecenas ultricies mi eget mauris.</p>
+				</p>
+			</div>
+			<div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+				<h5 class="pb-2">Featured</h5>
+				<ul class="text-uppercase list-unstyled">
+					<li><a href="#">men</a></li>
+					<li><a href="#">Women</a></li>
+					<li><a href="#">boys</a></li>
+					<li><a href="#">girls</a></li>
+					<li><a href="#">new arrivals</a></li>
+					<li><a href="#">shoes</a></li>
+					<li><a href="#">clothes</a></li>
+				</ul>
+			</div>
+			<div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+				<h5 class="pb-2">Contact Us</h5>
+				<div class="">
+					<h6 class="text-uppercase">Address</h6>
+					<p>123 STREET NAME, CITY, US</p>
+				</div>
+				<div class="">
+					<h6 class="text-uppercase">phobe</h6>
+					<p>(123) 456-7890</p>
+				</div>
+				<div class="">
+					<h6 class="text-uppercase">Email</h6>
+					<p>MAIIL@EXAMPLE.COM</p>
+				</div>
+			</div>
+			<div class="footer-one col-lg-3 col-md-6 col-12">
+				<h5 class="pb-2">Instagram</h5>
+				<div class="row">
+					<img class="img-fluid w-25 h-100 m-2" src="img/insta/1.jpg" alt="">
+					<img class="img-fluid w-25 h-100 m-2" src="img/insta/2.jpg" alt="">
+					<img class="img-fluid w-25 h-100 m-2" src="img/insta/3.jpg" alt="">
+					<img class="img-fluid w-25 h-100 m-2" src="img/insta/4.jpg" alt="">
+					<img class="img-fluid w-25 h-100 m-2" src="img/insta/5.jpg" alt="">
+				</div>
+			</div>
+		</div>
+		<div class="copyright mt-5">
+			<div class="row container mx-auto">
+
+				<div class="col-lg-3 col-md-6 col-12 mb-3">
+					<img src="img/payment.png" alt="">
+				</div>
+
+				<div class="col-lg-4 col-md-6 col-12 text-nowrap">
+					<p>rymo eCommerce @ 2021. All rights Reservrd</p>
+				</div>
+				
+				<div class="col-lg-4 col-md-6 col-12 mb-4">
+					<a href="#"><i class="fab fa-facebook-f"></i></a>
+					<a href="#"><i class="fab fa-twitter"></i></a>
+					<a href="#"><i class="fab fa-linkedin-in"></i></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
